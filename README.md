@@ -38,7 +38,8 @@ This stage clones the application repository from GitHub. Update the repository 
 1. **Update Jenkins Credentials**
    - Go to Jenkins -> Manage Jenkins -> Manage Credentials.
    - Add a new SSH credential with the ID `jenkins-ec2-key` (or modify the pipeline to match an existing credential ID).
-
+   - Install SSH Agent Plugin (important)
+     
 2. **Modify the Pipeline Script**
    - Change `EC2_HOST` to match your EC2 instance's public IP.
    - Update the GitHub repository URL in the `Clone Repository` stage.
